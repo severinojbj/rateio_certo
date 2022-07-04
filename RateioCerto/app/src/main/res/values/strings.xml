@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">RateioCerto</string>
+    <string name="txt_home_welcome" translatable="false">Bem vindo!</string>
+    <string name="txt_home_options" translatable="false">Escolha a opção desjada:</string>
+    <string name="txt_read_block" translatable="false">Qual bloco será lido?</string>
+    <string name="txt_read_block_num" translatable="false">A</string>
+    <string name="txt_read_apt" translatable="false">Qual apartamento? </string>
+    <string name="txt_read_apt_num" translatable="false">001</string>
+    <string name="txt_read_data" translatable="false">Agora, insira o valor de leitura:</string>
+    <string name="txt_read_data_value" translatable="false">0</string>
+    <string name="txt_read_file_list" translatable="false">Vazio</string>
+    <string name="txt_finish_sheet" translatable="false">Leitura concluída, toque no botão para salvar.</string>
+    <string name="btn_home_init">Iniciar leitura</string>
+    <string name="btn_home_last_sheet">Ver últimas planilhas</string>
+    <string name="btn_home_about">Sobre</string>
+    <string name="btn_read_next">Avançar</string>
+    <string name="btn_read_previous">Voltar</string>
+    <string name="btn_read_finish">Finalizar</string>
+    <string name="btn_finish_sheet">Salvar planilha</string>
+    <string name="btn_finish_home">Voltar ao inicio</string>
+    <string name="title_save_sheet">Planilhas salvas</string>
+</resources>
