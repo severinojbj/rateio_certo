@@ -3,10 +3,12 @@ package br.com.rateiocerto;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.TypedArrayUtils;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
+import java.util.Arrays;
 
 /**
  * Rateio Certo
@@ -43,7 +45,12 @@ public class ReadFileActivity extends AppCompatActivity {
         setTitle(R.string.title_save_sheet);
         File dir = new File(filePath);
         String [] list = dir.list();
-
+        /*int lengthList = list.length;
+        for (int i = 0; i < lengthList/2; i++) {
+            String temp = list [i];
+            list [i] = list [lengthList - i - 1];
+            list [lengthList - i - 1] = temp;
+        }*/
         this.recyclerView.setHasFixedSize(true);
 
         this.layoutManager = new LinearLayoutManager(getApplicationContext());

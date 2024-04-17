@@ -4,6 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import androidx.room.Relation;
 
 
 /**
@@ -27,9 +28,15 @@ public class ReadData {
 	@ColumnInfo (name = "id_leitura")
 	int idRead;
 
-	@ForeignKey (entity = Apartment.class,
-			parentColumns = "id_apt",
-			childColumns = "id_apt")
+//	@ForeignKey (entity = Apartment.class,
+//			parentColumns = "id_apt",
+//			childColumns = "id_apt",
+//			onDelete = ForeignKey.CASCADE)
+//	@Relation(
+//			entity = Apartment.class,
+//			parentColumn = "id_apt",
+//			entityColumn = "id_apt"
+//	)
 	@ColumnInfo (name = "id_apt")
 	int idApt;
 

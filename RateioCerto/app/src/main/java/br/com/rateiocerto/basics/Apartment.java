@@ -3,6 +3,7 @@ package br.com.rateiocerto.basics;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 /**
@@ -49,7 +50,7 @@ public class Apartment {
 	 * @param block nome ou código do bloco
 	 * @param num número do apartamento
 	 */
-	
+	@Ignore
 	public Apartment (String block, int num) {
 		this.block = block;
 		this.num = num;

@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import br.com.rateiocerto.basics.Apartment;
 import br.com.rateiocerto.basics.ReadData;
@@ -55,14 +56,15 @@ public class ReadActivity extends AppCompatActivity {
 
         for (int i = 1; i <= 256; i++) {
             int id = list.get(i-1).getId();
-            this.dataRWManager.insertUpdateReadData(new ReadData(0, id, "2020-05-13", i));
+//            this.dataRWManager.db.ReadDataDao().insertReadData(new ReadData(0, id, "2020-06-13", i));
+            this.dataRWManager.db.ReadDataDao().insertReadData(new ReadData(0, id, "2020-06-13", 0));
 
         }
 
         for (int i = 1; i <= 256; i++) {
             int id = list.get(i-1).getId();
             String testDate = LocalDate.now().toString();
-            this.dataRWManager.insertUpdateReadData(new ReadData(id, testDate, (10 + 2*i)));
+            this.dataRWManager.db.ReadDataDao().insertReadData(new ReadData(id, testDate, (10 + 2*i)));
 
         }
 
