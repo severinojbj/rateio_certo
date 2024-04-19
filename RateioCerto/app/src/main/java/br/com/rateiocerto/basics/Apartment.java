@@ -65,6 +65,7 @@ public class Apartment {
 	 * @param num número do apartamento
 	 */
 
+	@Ignore
 	public Apartment (int id, String block, int num) {
 		this.id = id;
 		this.block = block;
