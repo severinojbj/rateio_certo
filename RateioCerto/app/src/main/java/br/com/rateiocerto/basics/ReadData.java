@@ -21,22 +21,16 @@ import androidx.room.Relation;
  *
  * @Author: Severino José (biujose@gmail.com)
  */
-@Entity
+@Entity (foreignKeys = @ForeignKey (entity = Apartment.class,
+			parentColumns = "id_apt",
+			childColumns = "id_apt",
+			onDelete = ForeignKey.CASCADE))
 public class ReadData {
 
 	@PrimaryKey (autoGenerate = true)
 	@ColumnInfo (name = "id_leitura")
 	int idRead;
 
-//	@ForeignKey (entity = Apartment.class,
-//			parentColumns = "id_apt",
-//			childColumns = "id_apt",
-//			onDelete = ForeignKey.CASCADE)
-//	@Relation(
-//			entity = Apartment.class,
-//			parentColumn = "id_apt",
-//			entityColumn = "id_apt"
-//	)
 	@ColumnInfo (name = "id_apt")
 	int idApt;
 
